@@ -144,8 +144,7 @@ if [ "$CHECK" = true ]; then
   # run the gatorgrader.py program to run the checks
   printf "%s\n" "${blu}Starting to check with GatorGrader...${end}"
   # ADD ADDITIONAL CALLS TO BOTH gatorgrader.py and determine_exit_code HERE
-  # --> GatorGrader CHECK: the existence of files in directories
-  python3 gatorgrader/gatorgrader.py --directories writing . --checkfiles README.md
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories writing . --checkfiles README.md
   determine_exit_code $?
   # --> GatorGrader CHECK: at least 1 header fragment exists in the code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/www/ \
