@@ -160,7 +160,7 @@ if [ "$CHECK" = true ]; then
                                      --checkfiles answers.md --fragments "jpg" --fragmentcounts 1
   determine_exit_code $?
   # --> GatorGrader CHECK: the repository contains at least three commits (update to current + 3)
-  python3 gatorgrader/gatorgrader.py --nowelcome --commits 3
+  python3 gatorgrader/gatorgrader.py --nowelcome --commits 8
   determine_exit_code $?
   echo ""
   printf "%s\n" "${blu}... Finished checking with GatorGrader${end}"
